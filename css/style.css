@@ -187,11 +187,93 @@ p {
     min-height: 100%;   
 }
 
+/* contact page */
+.text-field {
+    display: grid;
+    grid-template-areas: 
+     'name email'
+     'subject phone'
+     'message message';
+     grid-gap: 1.2rem;
+     margin-bottom: 1.2rem;
+}
+
+.name-input{
+    grid-area: name;
+}
+
+.subject-input{
+    grid-area: subject;
+}
+
+.email-input{
+    grid-area: email;
+}
+
+.phone-input{
+    grid-area: phone;
+}
+
+.message-input{
+    grid-area: message;
+    height: 100px;
+}
+
+.text-input{
+    padding: 0.5rem 1rem;
+}
+
+.btn-dark {
+    width: 50%;
+    padding: 0.5rem 0.5rem;
+}
+
+.btn-dark:hover {
+    background: #f7c08a;
+}
+
+.section-title {
+    border-bottom: solid 4px #f7c08a;
+}
+
+.bg-main {
+    background: #f7c08a;
+}
+
+.main-color {
+    color: #f7c08a;
+}
 /* footer */
 #main-footer {
     background: #333;
     color: #fff;
-    margin-top: 20%;
+    /* margin-top: 20%; */
+    text-align: center;
+}
+#contact-c {
+    text-align: center;
+    color: #fff;
+}
+
+#contact-b {
+    color: #fff;
+}
+
+.list li a {
+    text-decoration: none;
+    color: #fff;
+}
+.site li{
+    padding: 1rem;
+}
+ul {
+    list-style: none;
+}
+
+ul li
+
+.contact-info {
+    text-align: center;
 }
 
 .fa {
