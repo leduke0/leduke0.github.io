@@ -1,16 +1,16 @@
-#about-info .info-img {
+/* #about-info .info-img {
     display: none;
     /* width: 100%;
     background: url('../img/pic1.jpg') no-repeat;   */
 }
 
 
-#about-info .info-content {
+/* #about-info .info-content {
     float: none;
     width: 100%;
     height: 200%;
     padding-bottom: 20%;
-} 
+}   */
 
 #skills h2 {
     text-align: center;
@@ -24,7 +24,11 @@
     
 }
 
-#about-info .info-image {
+.row {
+    float: none;
+}
+
+/* #about-info .info-image {
     float: none;
     width: 100%;
     background: url('../img/res1.jpg') no-repeat center center/cover;      
@@ -32,4 +36,4 @@
 
 #about-info .info-cont {
     display: none;   
-}
+} */

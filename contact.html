@@ -9,6 +9,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/responsive.css">
     <title>Contact</title>
+    <script type="text/javascript"> 
+      function sendEmail() { 
+        Email.send({ 
+          Host: "smtp.gmail.com", 
+          Username: "sender@email_address.com", 
+          Password: "Enter your password", 
+          To: 'duke91662@gmail.com', 
+          From: "sender@email_address.com", 
+          Subject: "Sending Email using javascript", 
+          Body: "Well that was easy!!", 
+        }) 
+          .then(function (message) { 
+            alert("mail sent successfully") 
+          }); 
+      } 
+    </script>    
 </head>
 <body>
     <header>
@@ -44,7 +60,8 @@
           Get In Touch
         </h2>
         <p class="lead">Here is how you can reach me</p>
-        <form name="contact" method="POST" data-netlify="true">
+        <!-- <form name="contact" method="POST" data-netlify="true"> -->
+          <form method="POST">
           <div class="text-field">
             <input type="text" name="name" class="text-input name-input" placeholder="Name">
             <input type="text" name="Subject" class="text-input subject-input" placeholder="Subject">
@@ -52,7 +69,9 @@
             <input type="text" name="Phone" class="text-input phone-input" placeholder="Phone Number">
             <textarea class="text-input message-input" placeholder="Enter Message"></textarea>
           </div>
-          <button class="btn-dark">Submit</button>
+          <!-- <button class="btn-dark">Submit</button> -->
+          <input type="button" class="btn-dark" value="Submit" 
+           onclick="sendEmail()" />
         </form>
       </div>
     </section>
@@ -109,20 +128,28 @@
               </div>
               </div>
               <div class="col-sm">
-                <h3>Social Buttons</h3>
-                <ul class="list">
-                    <li><a href="#"><i class="fa fa-facebook-square fa-3x"></i></a></li>
-                    <li><a href="#"><i class="fa fa-whatsapp fa-3x"></i></a></li>
-                    <li><a href="#"><i class="fa fa-phone fa-3x"></i></a></li>
-                    <li><a href="#"><i class="fa fa-envelope fa-3x"></i></a></li>
+                <h3>contact me</h3>
+                <i class="fa fa-envelope fa-2x"></i>  duke91662@gmail.com
+                <br>
+                <i class="fa fa-phone fa-2x"></i>   (+237) 672-579-446
+                <ul class="list-btn">
+                    <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-whatsapp fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-phone fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-envelope fa-2x"></i></a></li>
                 </ul>
+              </div>
+              <div class="footer-copyright text-center py-3">
+
+              </div>
               </div>
             </div>
           </div>
     </footer>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-</body>
+    <script src= "https://smtpjs.com/v3/smtp.js"> 
+    </script>
+  </body>
 </html>
