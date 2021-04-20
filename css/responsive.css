@@ -28,6 +28,10 @@
     float: none;
 }
 
+.contact-info {
+    float: none;
+    width: 100%;
+}
 /* #about-info .info-image {
     float: none;
     width: 100%;
