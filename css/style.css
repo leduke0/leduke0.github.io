@@ -252,10 +252,13 @@ img {
     color: #f7c08a;
 }
 /* footer */
-#main-footer {
+#main-footer ,#contact-b{
     background: #333;
     color: #fff;
     padding-top: 25px;
+    text-align: center;
+}
+#section-skills {
     text-align: center;
 }
 #contact-c {
