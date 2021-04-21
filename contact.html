@@ -63,15 +63,41 @@
         <!-- <form name="contact" method="POST" data-netlify="true"> -->
           <form method="POST">
           <div class="text-field">
-            <input type="text" name="name" class="text-input name-input" placeholder="Name">
+            <!-- <input type="text" name="name" class="text-input name-input" placeholder="Name">
             <input type="text" name="Subject" class="text-input subject-input" placeholder="Subject">
             <input type="email" name="email" class="text-input email-input" placeholder="Email Address">
             <input type="text" name="Phone" class="text-input phone-input" placeholder="Phone Number">
-            <textarea class="text-input message-input" placeholder="Enter Message"></textarea>
+            <textarea class="text-input message-input" placeholder="Enter Message"></textarea> -->
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="inputName4">Name</label>
+                <input type="name" class="form-control" id="inputEmail4" placeholder="Name">
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputPassword4" placeholder="Email">
+              </div>
           </div>
+          <div class="form-row">
+            <div class="col-md-6">
+              <label for="inputSubject4">Subject</label>
+              <input type="text" class="form-control" id="inputEmail4" placeholder="Subject">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPhone4">Phone</label>
+              <input type="phone" class="form-control" id="inputPassword4" placeholder="Phone Number">
+            </div>
+        </div>
+        <br>
+        <div class="textarea">
+          <textarea class="form-control" placeholder="Enter Message"></textarea>
+        </div>
           <!-- <button class="btn-dark">Submit</button> -->
+          <br>
+          <div >
           <input type="button" class="btn-dark" value="Submit" 
            onclick="sendEmail()" />
+          </div>
         </form>
       </div>
     </section>

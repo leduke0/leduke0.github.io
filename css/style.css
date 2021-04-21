@@ -196,7 +196,7 @@ img {
 }
 
 /* contact page */
-.text-field {
+/* .text-field {
     display: grid;
     grid-template-areas: 
      'name email'
@@ -229,7 +229,7 @@ img {
 
 .text-input{
     padding: 0.5rem 1rem;
-}
+} */
 
 .btn-dark {
     width: 50%;
